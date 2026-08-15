@@ -1,0 +1,81 @@
+{
+  "id": "replicate",
+  "company": "Replicate",
+  "product": "Replicate API",
+  "domain": "replicate.com",
+  "pricing_url": "https://replicate.com/pricing",
+  "classification": {
+    "product_models": [
+      "ai-infrastructure",
+      "marketplace"
+    ],
+    "pricing_components": [
+      "enterprise-contract",
+      "model-specific",
+      "usage-based"
+    ],
+    "charge_metrics": [
+      "input-token",
+      "model-usage",
+      "output-token"
+    ],
+    "customer_value_metrics": [
+      "model-inference"
+    ]
+  },
+  "observed": {
+    "pricing_architecture": "Pay-as-you-go marketplace and model-hosting pricing: public models may be priced by hardware time or by inputs and outputs; private deployments can bill for online instance time.",
+    "plans": [
+      {
+        "name": "API",
+        "price_note": "Published, model- and hardware-specific usage rates.",
+        "billing_period": "usage",
+        "public_price": true
+      }
+    ],
+    "free_access": {
+      "available": false,
+      "note": "No general free production allowance recorded."
+    },
+    "enterprise": {
+      "offered": true,
+      "contact_sales": true
+    }
+  },
+  "analysis": {
+    "monetization_archetypes": [
+      "consumption-monetization",
+      "marketplace-monetization"
+    ],
+    "expansion_vectors": [
+      {
+        "type": "compute-time",
+        "description": "Spend rises with runtime and selected hardware.",
+        "confidence": "verified"
+      },
+      {
+        "type": "model-mix",
+        "description": "Different models expose different units and prices.",
+        "confidence": "verified"
+      }
+    ],
+    "monetization_summary": "Replicate exposes heterogeneous model costs directly, using runtime or model-native output units instead of a single abstract credit."
+  },
+  "sources": [
+    {
+      "url": "https://replicate.com/pricing",
+      "source_type": "official-pricing-page",
+      "title": "Replicate pricing",
+      "accessed_at": "2026-08-14",
+      "supports": [
+        "pricing-model",
+        "charge-metric",
+        "enterprise"
+      ],
+      "confidence": "verified"
+    }
+  ],
+  "captured_at": "2026-08-14",
+  "last_verified_at": "2026-08-14",
+  "review_status": "verified"
+}

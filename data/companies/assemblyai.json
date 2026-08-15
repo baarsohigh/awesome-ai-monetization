@@ -1,0 +1,85 @@
+{
+  "id": "assemblyai",
+  "company": "AssemblyAI",
+  "product": "AssemblyAI API",
+  "domain": "assemblyai.com",
+  "pricing_url": "https://www.assemblyai.com/pricing",
+  "classification": {
+    "product_models": [
+      "vertical-ai"
+    ],
+    "pricing_components": [
+      "capability-based",
+      "enterprise-contract",
+      "tiered",
+      "usage-based"
+    ],
+    "charge_metrics": [
+      "audio-minute",
+      "model-usage"
+    ],
+    "customer_value_metrics": [
+      "generated-audio"
+    ]
+  },
+  "observed": {
+    "pricing_architecture": "Speech and audio intelligence APIs are priced by usage, with feature- and endpoint-specific pricing and enterprise volume arrangements.",
+    "plans": [
+      {
+        "name": "API",
+        "price_note": "Published usage pricing by audio and feature category.",
+        "billing_period": "usage",
+        "public_price": true
+      },
+      {
+        "name": "Enterprise",
+        "custom_pricing": true
+      }
+    ],
+    "free_access": {
+      "available": true,
+      "note": "Official pricing page presents a free developer starting option."
+    },
+    "enterprise": {
+      "offered": true,
+      "contact_sales": true
+    }
+  },
+  "analysis": {
+    "monetization_archetypes": [
+      "consumption-monetization",
+      "feature-monetization"
+    ],
+    "expansion_vectors": [
+      {
+        "type": "audio-volume",
+        "description": "Spend expands with processed audio duration.",
+        "confidence": "verified"
+      },
+      {
+        "type": "feature-adoption",
+        "description": "Additional intelligence features create incremental usage paths.",
+        "confidence": "verified"
+      }
+    ],
+    "monetization_summary": "AssemblyAI monetizes a customer-legible unit—audio processed—then expands through richer speech intelligence."
+  },
+  "sources": [
+    {
+      "url": "https://www.assemblyai.com/pricing",
+      "source_type": "official-pricing-page",
+      "title": "AssemblyAI pricing",
+      "accessed_at": "2026-08-14",
+      "supports": [
+        "pricing-model",
+        "charge-metric",
+        "free-tier",
+        "enterprise"
+      ],
+      "confidence": "verified"
+    }
+  ],
+  "captured_at": "2026-08-14",
+  "last_verified_at": "2026-08-14",
+  "review_status": "verified"
+}

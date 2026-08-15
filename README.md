@@ -21,6 +21,7 @@ AI products often combine variable inference costs with seats, credits, usage, o
 npm install
 npm run validate:data
 npm run generate:data
+npm run analyze:data
 npm run dev
 
 # Query the canonical records

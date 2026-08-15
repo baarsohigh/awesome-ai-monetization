@@ -1,0 +1,92 @@
+{
+  "id": "hugging-face-inference",
+  "company": "Hugging Face",
+  "product": "Inference Providers",
+  "domain": "huggingface.co",
+  "pricing_url": "https://huggingface.co/docs/inference-providers/pricing",
+  "classification": {
+    "product_models": [
+      "ai-infrastructure",
+      "foundation-model-api",
+      "marketplace"
+    ],
+    "pricing_components": [
+      "credit-based",
+      "enterprise-contract",
+      "platform-fee-usage",
+      "subscription",
+      "usage-based"
+    ],
+    "charge_metrics": [
+      "credit",
+      "input-token",
+      "model-usage",
+      "output-token"
+    ],
+    "customer_value_metrics": [
+      "model-inference"
+    ]
+  },
+  "observed": {
+    "pricing_architecture": "Inference Providers uses account credits and passes through provider-specific inference pricing; Hub subscriptions include monthly credit allowances.",
+    "plans": [
+      {
+        "name": "Inference Providers",
+        "price_note": "Provider-specific usage prices are surfaced through credits.",
+        "billing_period": "usage",
+        "public_price": true
+      },
+      {
+        "name": "Hub subscriptions",
+        "price_note": "Subscriptions include monthly credits.",
+        "billing_period": "month",
+        "public_price": true
+      }
+    ],
+    "free_access": {
+      "available": true,
+      "note": "Free users receive a small monthly credit allowance."
+    },
+    "enterprise": {
+      "offered": true,
+      "contact_sales": true
+    }
+  },
+  "analysis": {
+    "monetization_archetypes": [
+      "credit-abstraction",
+      "marketplace-monetization",
+      "hybrid-monetization"
+    ],
+    "expansion_vectors": [
+      {
+        "type": "provider-usage",
+        "description": "Usage rises across selected third-party providers.",
+        "confidence": "verified"
+      },
+      {
+        "type": "subscription-upgrade",
+        "description": "Higher Hub subscriptions include larger monthly credit allowances.",
+        "confidence": "verified"
+      }
+    ],
+    "monetization_summary": "Hugging Face abstracts a multi-provider inference marketplace behind credits while using subscriptions to bundle ongoing purchasing power."
+  },
+  "sources": [
+    {
+      "url": "https://huggingface.co/docs/inference-providers/pricing",
+      "source_type": "official-pricing-docs",
+      "title": "Hugging Face Inference Providers pricing",
+      "accessed_at": "2026-08-14",
+      "supports": [
+        "pricing-model",
+        "credits",
+        "free-tier"
+      ],
+      "confidence": "verified"
+    }
+  ],
+  "captured_at": "2026-08-14",
+  "last_verified_at": "2026-08-14",
+  "review_status": "verified"
+}

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T02:40:02.883Z",
+  "generated_at": "2026-08-15T03:25:30.214Z",
   "records": [
     {
       "id": "anthropic-api",
@@ -70,6 +70,371 @@
             "pricing-model",
             "charge-metric",
             "plans"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "assemblyai",
+      "company": "AssemblyAI",
+      "product": "AssemblyAI API",
+      "domain": "assemblyai.com",
+      "pricing_url": "https://www.assemblyai.com/pricing",
+      "classification": {
+        "product_models": [
+          "vertical-ai"
+        ],
+        "pricing_components": [
+          "capability-based",
+          "enterprise-contract",
+          "tiered",
+          "usage-based"
+        ],
+        "charge_metrics": [
+          "audio-minute",
+          "model-usage"
+        ],
+        "customer_value_metrics": [
+          "generated-audio"
+        ]
+      },
+      "observed": {
+        "pricing_architecture": "Speech and audio intelligence APIs are priced by usage, with feature- and endpoint-specific pricing and enterprise volume arrangements.",
+        "plans": [
+          {
+            "name": "API",
+            "price_note": "Published usage pricing by audio and feature category.",
+            "billing_period": "usage",
+            "public_price": true
+          },
+          {
+            "name": "Enterprise",
+            "custom_pricing": true
+          }
+        ],
+        "free_access": {
+          "available": true,
+          "note": "Official pricing page presents a free developer starting option."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "consumption-monetization",
+          "feature-monetization"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "audio-volume",
+            "description": "Spend expands with processed audio duration.",
+            "confidence": "verified"
+          },
+          {
+            "type": "feature-adoption",
+            "description": "Additional intelligence features create incremental usage paths.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "AssemblyAI monetizes a customer-legible unit—audio processed—then expands through richer speech intelligence."
+      },
+      "sources": [
+        {
+          "url": "https://www.assemblyai.com/pricing",
+          "source_type": "official-pricing-page",
+          "title": "AssemblyAI pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "pricing-model",
+            "charge-metric",
+            "free-tier",
+            "enterprise"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "bolt",
+      "company": "StackBlitz",
+      "product": "Bolt.new",
+      "domain": "bolt.new",
+      "pricing_url": "https://bolt.new/pricing",
+      "classification": {
+        "product_models": [
+          "developer-tool",
+          "ai-agent"
+        ],
+        "pricing_components": [
+          "subscription",
+          "included-usage",
+          "usage-based",
+          "freemium",
+          "seat-based",
+          "enterprise-contract",
+          "tiered"
+        ],
+        "charge_metrics": [
+          "input-token",
+          "output-token",
+          "user-seat"
+        ],
+        "customer_value_metrics": [
+          "developer-productivity",
+          "coding-workflow"
+        ]
+      },
+      "observed": {
+        "pricing_architecture": "Bolt offers a free allowance, token-based Pro capacity, per-member Teams pricing, and custom Enterprise. The source lists Free at 300k tokens/day and 1m/month; Pro starts at 10m tokens/month, and paid tokens roll over for one additional active month.",
+        "plans": [
+          {
+            "name": "Free",
+            "price": 0,
+            "currency": "USD",
+            "billing_period": "month",
+            "price_note": "Includes published daily and monthly token allowances.",
+            "public_price": true
+          },
+          {
+            "name": "Pro",
+            "price": 25,
+            "currency": "USD",
+            "billing_period": "month",
+            "price_note": "Starts at 10m tokens/month; selectable capacity may vary.",
+            "public_price": true
+          },
+          {
+            "name": "Teams",
+            "price": 30,
+            "currency": "USD",
+            "billing_period": "month",
+            "per_unit": "member",
+            "public_price": true
+          },
+          {
+            "name": "Enterprise",
+            "custom_pricing": true
+          }
+        ],
+        "free_access": {
+          "available": true,
+          "note": "Free includes a daily and monthly token allowance."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "token-allowance-subscription"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "higher-token-capacity",
+            "description": "Pro capacity begins at a stated token amount and supports a usage ladder.",
+            "confidence": "verified"
+          },
+          {
+            "type": "team-seats",
+            "description": "Teams is priced per member.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "Bolt pairs a developer-friendly token allowance with a team-seat offer and enterprise contract path."
+      },
+      "sources": [
+        {
+          "url": "https://bolt.new/pricing",
+          "source_type": "official-pricing-page",
+          "title": "Bolt.new pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "plans",
+            "token-allowances",
+            "rollover",
+            "teams"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "claude-team",
+      "company": "Anthropic",
+      "product": "Claude Team",
+      "domain": "claude.com",
+      "pricing_url": "https://claude.com/pricing",
+      "classification": {
+        "product_models": [
+          "ai-copilot",
+          "horizontal-ai-application"
+        ],
+        "pricing_components": [
+          "subscription",
+          "seat-based",
+          "usage-based",
+          "hybrid-seat-usage",
+          "model-specific",
+          "enterprise-contract"
+        ],
+        "charge_metrics": [
+          "user-seat",
+          "model-usage"
+        ],
+        "customer_value_metrics": []
+      },
+      "observed": {
+        "pricing_architecture": "The Claude pricing page states a Team construction of $20 per seat/month plus usage billed at API rates. This record intentionally isolates the Team package from Anthropic's API product.",
+        "plans": [
+          {
+            "name": "Team",
+            "price": 20,
+            "currency": "USD",
+            "billing_period": "month",
+            "per_unit": "user-seat",
+            "price_note": "Plus usage billed at API rates.",
+            "public_price": true
+          },
+          {
+            "name": "Enterprise",
+            "custom_pricing": true
+          }
+        ],
+        "free_access": {
+          "available": false,
+          "note": "This package record covers the paid Team construction, not Claude's individual free offering."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "hybrid-seat-usage"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "more-seats",
+            "description": "The base Team fee is charged per seat.",
+            "confidence": "verified"
+          },
+          {
+            "type": "model-usage",
+            "description": "Team usage is billed at API rates according to the pricing source.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "Claude Team explicitly combines organization access revenue with a variable model-consumption layer."
+      },
+      "sources": [
+        {
+          "url": "https://claude.com/pricing",
+          "source_type": "official-pricing-page",
+          "title": "Claude pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "team-seat-price",
+            "api-rate-usage",
+            "enterprise"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "cohere",
+      "company": "Cohere",
+      "product": "Cohere API",
+      "domain": "cohere.com",
+      "pricing_url": "https://cohere.com/pricing",
+      "classification": {
+        "product_models": [
+          "ai-enabled-saas",
+          "foundation-model-api"
+        ],
+        "pricing_components": [
+          "enterprise-contract",
+          "model-specific",
+          "usage-based"
+        ],
+        "charge_metrics": [
+          "input-token",
+          "model-usage",
+          "output-token"
+        ],
+        "customer_value_metrics": [
+          "model-inference"
+        ]
+      },
+      "observed": {
+        "pricing_architecture": "The public pricing page provides API pricing by model and separates enterprise engagement from self-serve usage.",
+        "plans": [
+          {
+            "name": "API",
+            "price_note": "Published model-specific usage pricing.",
+            "billing_period": "usage",
+            "public_price": true
+          },
+          {
+            "name": "Enterprise",
+            "custom_pricing": true
+          }
+        ],
+        "free_access": {
+          "available": false,
+          "note": "Free developer access, if available, is not represented as a production price plan here."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "consumption-monetization",
+          "enterprise-contracting"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "token-volume",
+            "description": "API spend rises with model consumption.",
+            "confidence": "verified"
+          },
+          {
+            "type": "enterprise-adoption",
+            "description": "Enterprise is positioned as a separate commercial path.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "Cohere combines self-serve model consumption with enterprise commercial packaging for private deployments and organizational use."
+      },
+      "sources": [
+        {
+          "url": "https://cohere.com/pricing",
+          "source_type": "official-pricing-page",
+          "title": "Cohere pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "pricing-model",
+            "plans",
+            "enterprise"
           ],
           "confidence": "verified"
         }
@@ -201,6 +566,285 @@
       "review_status": "verified"
     },
     {
+      "id": "deepl-api",
+      "company": "DeepL",
+      "product": "DeepL API",
+      "domain": "deepl.com",
+      "pricing_url": "https://www.deepl.com/en/pro-api",
+      "classification": {
+        "product_models": [
+          "vertical-ai"
+        ],
+        "pricing_components": [
+          "enterprise-contract",
+          "included-usage",
+          "subscription",
+          "usage-based"
+        ],
+        "charge_metrics": [
+          "character"
+        ],
+        "customer_value_metrics": [
+          "model-inference"
+        ]
+      },
+      "observed": {
+        "pricing_architecture": "DeepL Pro API combines a recurring subscription with character-based translation consumption; document translation and higher-volume needs are separately packaged.",
+        "plans": [
+          {
+            "name": "DeepL API",
+            "price_note": "Subscription and character-based usage pricing are published by region and plan.",
+            "billing_period": "month",
+            "public_price": true
+          }
+        ],
+        "free_access": {
+          "available": true,
+          "note": "DeepL offers API Free subject to a monthly character allowance."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "hybrid-monetization",
+          "consumption-monetization"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "character-volume",
+            "description": "Translation usage grows with characters processed.",
+            "confidence": "verified"
+          },
+          {
+            "type": "tier-upgrade",
+            "description": "Higher-volume and business needs lead to paid Pro packaging.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "DeepL anchors recurring revenue with an API subscription while preserving a transparent volume meter tied to translated content."
+      },
+      "sources": [
+        {
+          "url": "https://www.deepl.com/en/pro-api",
+          "source_type": "official-pricing-page",
+          "title": "DeepL Pro API",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "pricing-model",
+            "charge-metric",
+            "free-tier"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "descript",
+      "company": "Descript",
+      "product": "Descript",
+      "domain": "descript.com",
+      "pricing_url": "https://www.descript.com/pricing",
+      "classification": {
+        "product_models": [
+          "ai-enabled-saas",
+          "horizontal-ai-application"
+        ],
+        "pricing_components": [
+          "subscription",
+          "seat-based",
+          "included-credits",
+          "credit-based",
+          "freemium",
+          "enterprise-contract"
+        ],
+        "charge_metrics": [
+          "user-seat",
+          "credit"
+        ],
+        "customer_value_metrics": []
+      },
+      "observed": {
+        "pricing_architecture": "Descript combines per-editor subscriptions with plan allowances for media hours and AI credits; paid plans can add top-ups and Enterprise is custom.",
+        "plans": [
+          {
+            "name": "Free",
+            "price": 0,
+            "currency": "USD",
+            "billing_period": "month",
+            "public_price": true
+          },
+          {
+            "name": "Hobbyist annual",
+            "price": 16,
+            "currency": "USD",
+            "billing_period": "month",
+            "per_unit": "editor",
+            "price_note": "Annual-equivalent monthly price; includes 10 media hours and 400 AI credits in captured source.",
+            "public_price": true
+          },
+          {
+            "name": "Creator annual",
+            "price": 24,
+            "currency": "USD",
+            "billing_period": "month",
+            "per_unit": "editor",
+            "price_note": "Annual-equivalent monthly price; includes 30 media hours and 800 AI credits in captured source.",
+            "public_price": true
+          },
+          {
+            "name": "Business annual",
+            "price": 50,
+            "currency": "USD",
+            "billing_period": "month",
+            "per_unit": "editor",
+            "price_note": "Annual-equivalent monthly price; includes 40 media hours and 1,500 AI credits in captured source.",
+            "public_price": true
+          },
+          {
+            "name": "Enterprise",
+            "custom_pricing": true
+          }
+        ],
+        "free_access": {
+          "available": true,
+          "note": "Official pricing page lists a Free plan."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "allowance-led-subscription",
+          "credit-abstraction"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "tier-upgrade",
+            "description": "Higher tiers package additional media and AI capacity.",
+            "confidence": "verified"
+          },
+          {
+            "type": "top-up",
+            "description": "Paid plans support additional capacity purchases.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "Descript wraps AI-intensive editing features in a creator-friendly seat subscription with capacity allowances."
+      },
+      "sources": [
+        {
+          "url": "https://www.descript.com/pricing",
+          "source_type": "official-pricing-page",
+          "title": "Descript pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "plans",
+            "ai-credits",
+            "media-hours",
+            "top-ups"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "elevenagents",
+      "company": "ElevenLabs",
+      "product": "ElevenAgents",
+      "domain": "elevenlabs.io",
+      "pricing_url": "https://help.elevenlabs.io/hc/en-us/articles/29298065878929-How-much-does-ElevenAgents-cost",
+      "classification": {
+        "product_models": [
+          "ai-agent",
+          "ai-infrastructure"
+        ],
+        "pricing_components": [
+          "usage-based",
+          "subscription",
+          "included-usage",
+          "model-specific",
+          "enterprise-contract"
+        ],
+        "charge_metrics": [
+          "audio-minute",
+          "model-usage"
+        ],
+        "customer_value_metrics": [
+          "voice-workflow"
+        ]
+      },
+      "observed": {
+        "pricing_architecture": "ElevenAgents charges agent-call usage on applicable subscriptions. Voice calls are duration-based, text-only calls are per message, and LLM charges are passed through separately; higher subscriptions include voice minutes and lower incremental rates.",
+        "plans": [
+          {
+            "name": "Subscription-backed usage",
+            "price_note": "Applicable subscription plans include varying voice-minute allowances and incremental rates.",
+            "public_price": true
+          },
+          {
+            "name": "Enterprise",
+            "custom_pricing": true
+          }
+        ],
+        "free_access": {
+          "available": false,
+          "note": "This product record captures agent usage layered on subscriptions; eligibility and included capacity vary by plan."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "feature-level-consumption",
+          "pass-through-model-cost"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "voice-minutes",
+            "description": "Voice agent calls scale with duration.",
+            "confidence": "verified"
+          },
+          {
+            "type": "conversation-volume",
+            "description": "Text-only calls are priced per message.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "ElevenAgents layers channel-specific usage and external model pass-through on top of the vendor's subscription structure."
+      },
+      "sources": [
+        {
+          "url": "https://help.elevenlabs.io/hc/en-us/articles/29298065878929-How-much-does-ElevenAgents-cost",
+          "source_type": "official-help-center",
+          "title": "How much does ElevenAgents cost?",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "agent-call-pricing",
+            "voice-duration",
+            "text-message-pricing",
+            "model-pass-through"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
       "id": "elevenlabs",
       "company": "ElevenLabs",
       "product": "ElevenLabs",
@@ -288,6 +932,91 @@
             "plans",
             "credits",
             "free-tier",
+            "enterprise"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "fireworks-ai",
+      "company": "Fireworks AI",
+      "product": "Fireworks AI",
+      "domain": "fireworks.ai",
+      "pricing_url": "https://fireworks.ai/pricing",
+      "classification": {
+        "product_models": [
+          "ai-infrastructure",
+          "foundation-model-api"
+        ],
+        "pricing_components": [
+          "enterprise-contract",
+          "model-specific",
+          "usage-based"
+        ],
+        "charge_metrics": [
+          "input-token",
+          "model-usage",
+          "output-token"
+        ],
+        "customer_value_metrics": [
+          "model-inference"
+        ]
+      },
+      "observed": {
+        "pricing_architecture": "The public price page presents serverless model inference alongside dedicated deployment and enterprise options; rates vary by model and deployment mode.",
+        "plans": [
+          {
+            "name": "Serverless",
+            "price_note": "Published model-specific inference pricing.",
+            "billing_period": "usage",
+            "public_price": true
+          },
+          {
+            "name": "Dedicated deployment",
+            "custom_pricing": true
+          }
+        ],
+        "free_access": {
+          "available": false,
+          "note": "No general free tier recorded."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "consumption-monetization",
+          "capacity-monetization"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "token-volume",
+            "description": "Inference usage scales with token volume and model selection.",
+            "confidence": "verified"
+          },
+          {
+            "type": "dedicated-capacity",
+            "description": "Dedicated deployment is a higher-control buying path.",
+            "confidence": "high"
+          }
+        ],
+        "monetization_summary": "Fireworks creates a familiar land-and-expand path from metered inference into dedicated capacity."
+      },
+      "sources": [
+        {
+          "url": "https://fireworks.ai/pricing",
+          "source_type": "official-pricing-page",
+          "title": "Fireworks AI pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "pricing-model",
+            "plans",
             "enterprise"
           ],
           "confidence": "verified"
@@ -421,6 +1150,747 @@
       "review_status": "verified"
     },
     {
+      "id": "groqcloud",
+      "company": "Groq",
+      "product": "GroqCloud",
+      "domain": "groq.com",
+      "pricing_url": "https://console.groq.com/docs/models",
+      "classification": {
+        "product_models": [
+          "ai-infrastructure",
+          "foundation-model-api"
+        ],
+        "pricing_components": [
+          "enterprise-contract",
+          "model-specific",
+          "usage-based"
+        ],
+        "charge_metrics": [
+          "input-token",
+          "output-token"
+        ],
+        "customer_value_metrics": [
+          "model-inference"
+        ]
+      },
+      "observed": {
+        "pricing_architecture": "GroqCloud documents production models with published per-token prices, while enterprise commercial engagement is available for larger deployments.",
+        "plans": [
+          {
+            "name": "GroqCloud API",
+            "price_note": "Published production-model token prices.",
+            "billing_period": "usage",
+            "public_price": true
+          },
+          {
+            "name": "Enterprise",
+            "custom_pricing": true
+          }
+        ],
+        "free_access": {
+          "available": true,
+          "note": "Developer access is available; production billing is model-specific."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "consumption-monetization"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "token-volume",
+            "description": "Spend scales with input and output token volume.",
+            "confidence": "verified"
+          },
+          {
+            "type": "model-adoption",
+            "description": "The price table varies by production model.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "GroqCloud commercializes high-speed inference through a familiar token meter, leaving the performance differentiation in the product rather than the billing unit."
+      },
+      "sources": [
+        {
+          "url": "https://console.groq.com/docs/models",
+          "source_type": "official-pricing-docs",
+          "title": "GroqCloud models and pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "pricing-model",
+            "charge-metric",
+            "free-tier"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "hugging-face-inference",
+      "company": "Hugging Face",
+      "product": "Inference Providers",
+      "domain": "huggingface.co",
+      "pricing_url": "https://huggingface.co/docs/inference-providers/pricing",
+      "classification": {
+        "product_models": [
+          "ai-infrastructure",
+          "foundation-model-api",
+          "marketplace"
+        ],
+        "pricing_components": [
+          "credit-based",
+          "enterprise-contract",
+          "platform-fee-usage",
+          "subscription",
+          "usage-based"
+        ],
+        "charge_metrics": [
+          "credit",
+          "input-token",
+          "model-usage",
+          "output-token"
+        ],
+        "customer_value_metrics": [
+          "model-inference"
+        ]
+      },
+      "observed": {
+        "pricing_architecture": "Inference Providers uses account credits and passes through provider-specific inference pricing; Hub subscriptions include monthly credit allowances.",
+        "plans": [
+          {
+            "name": "Inference Providers",
+            "price_note": "Provider-specific usage prices are surfaced through credits.",
+            "billing_period": "usage",
+            "public_price": true
+          },
+          {
+            "name": "Hub subscriptions",
+            "price_note": "Subscriptions include monthly credits.",
+            "billing_period": "month",
+            "public_price": true
+          }
+        ],
+        "free_access": {
+          "available": true,
+          "note": "Free users receive a small monthly credit allowance."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "credit-abstraction",
+          "marketplace-monetization",
+          "hybrid-monetization"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "provider-usage",
+            "description": "Usage rises across selected third-party providers.",
+            "confidence": "verified"
+          },
+          {
+            "type": "subscription-upgrade",
+            "description": "Higher Hub subscriptions include larger monthly credit allowances.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "Hugging Face abstracts a multi-provider inference marketplace behind credits while using subscriptions to bundle ongoing purchasing power."
+      },
+      "sources": [
+        {
+          "url": "https://huggingface.co/docs/inference-providers/pricing",
+          "source_type": "official-pricing-docs",
+          "title": "Hugging Face Inference Providers pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "pricing-model",
+            "credits",
+            "free-tier"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "intercom-copilot",
+      "company": "Intercom",
+      "product": "Intercom Copilot",
+      "domain": "intercom.com",
+      "pricing_url": "https://www.intercom.com/help/en/articles/9121384-copilot-included-and-unlimited-usage",
+      "classification": {
+        "product_models": [
+          "ai-copilot",
+          "vertical-ai"
+        ],
+        "pricing_components": [
+          "seat-based",
+          "subscription",
+          "included-usage",
+          "freemium"
+        ],
+        "charge_metrics": [
+          "user-seat"
+        ],
+        "customer_value_metrics": []
+      },
+      "observed": {
+        "pricing_architecture": "Copilot is a teammate-facing seat add-on. Unlimited Copilot is $35 per teammate/month monthly or $29 per teammate/month annually; the source also describes included monthly Copilot and AI translation conversations per agent.",
+        "plans": [
+          {
+            "name": "Included sample usage",
+            "price": 0,
+            "currency": "USD",
+            "billing_period": "month",
+            "per_unit": "agent",
+            "price_note": "10 Copilot and 10 AI auto-translation conversations per agent in captured source.",
+            "public_price": true
+          },
+          {
+            "name": "Unlimited Copilot monthly",
+            "price": 35,
+            "currency": "USD",
+            "billing_period": "month",
+            "per_unit": "teammate",
+            "public_price": true
+          },
+          {
+            "name": "Unlimited Copilot annual",
+            "price": 29,
+            "currency": "USD",
+            "billing_period": "month",
+            "per_unit": "teammate",
+            "price_note": "Monthly equivalent when billed annually.",
+            "public_price": true
+          }
+        ],
+        "free_access": {
+          "available": true,
+          "note": "A limited monthly allowance is included per agent."
+        },
+        "enterprise": {
+          "offered": false
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "seat-add-on"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "more-teammates",
+            "description": "Unlimited Copilot pricing is per teammate.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "Intercom monetizes agent-assist separately from Fin's outcome-priced customer automation."
+      },
+      "sources": [
+        {
+          "url": "https://www.intercom.com/help/en/articles/9121384-copilot-included-and-unlimited-usage",
+          "source_type": "official-help-center",
+          "title": "Copilot included and unlimited usage",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "copilot-prices",
+            "included-usage",
+            "charge-metric"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "intercom-fin",
+      "company": "Intercom",
+      "product": "Fin AI Agent",
+      "domain": "intercom.com",
+      "pricing_url": "https://www.intercom.com/pricing",
+      "classification": {
+        "product_models": [
+          "ai-agent",
+          "vertical-ai"
+        ],
+        "pricing_components": [
+          "outcome-based",
+          "usage-based",
+          "seat-based",
+          "enterprise-contract"
+        ],
+        "charge_metrics": [],
+        "customer_value_metrics": []
+      },
+      "observed": {
+        "pricing_architecture": "Fin is priced at $0.99 per resolved customer outcome. It may be used with Intercom support plans or with an existing helpdesk, where Intercom states a minimum commitment applies.",
+        "plans": [
+          {
+            "name": "Fin AI Agent",
+            "price": 0.99,
+            "currency": "USD",
+            "per_unit": "resolved outcome",
+            "public_price": true
+          },
+          {
+            "name": "Existing helpdesk deployment",
+            "price_note": "No Intercom seat cost; official FAQ describes a minimum monthly commitment.",
+            "public_price": true
+          },
+          {
+            "name": "Enterprise",
+            "custom_pricing": true
+          }
+        ],
+        "free_access": {
+          "available": false,
+          "note": "Pricing is consumption-based; published deployment terms vary by support-stack choice."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "outcome-pricing"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "increased-resolution-volume",
+            "description": "Revenue scales with customer issues resolved by the agent.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "Fin connects its consumption unit to a support outcome rather than a seat or model input."
+      },
+      "sources": [
+        {
+          "url": "https://www.intercom.com/pricing",
+          "source_type": "official-pricing-page",
+          "title": "Intercom pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "fin-price",
+            "support-plans"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "url": "https://www.intercom.com/help/en/articles/7837535-fin-ai-agent-faqs",
+          "source_type": "official-help-center",
+          "title": "Fin AI Agent FAQs",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "outcome-definition",
+            "existing-helpdesk"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "jasper",
+      "company": "Jasper",
+      "product": "Jasper",
+      "domain": "jasper.ai",
+      "pricing_url": "https://www.jasper.ai/pricing",
+      "classification": {
+        "product_models": [
+          "horizontal-ai-application",
+          "ai-enabled-saas"
+        ],
+        "pricing_components": [
+          "subscription",
+          "seat-based",
+          "capability-based",
+          "enterprise-contract"
+        ],
+        "charge_metrics": [
+          "user-seat"
+        ],
+        "customer_value_metrics": []
+      },
+      "observed": {
+        "pricing_architecture": "Jasper presents a per-seat Pro subscription and a custom Business offer. The public page describes additional brand, knowledge, audience, agent, and enterprise capabilities by tier.",
+        "plans": [
+          {
+            "name": "Pro monthly",
+            "price": 69,
+            "currency": "USD",
+            "billing_period": "month",
+            "per_unit": "user-seat",
+            "public_price": true
+          },
+          {
+            "name": "Pro annual",
+            "price": 59,
+            "currency": "USD",
+            "billing_period": "month",
+            "per_unit": "user-seat",
+            "price_note": "Monthly equivalent when billed yearly.",
+            "public_price": true
+          },
+          {
+            "name": "Business",
+            "custom_pricing": true
+          }
+        ],
+        "free_access": {
+          "available": false,
+          "note": "No permanent free tier was recorded from the source capture."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "seat-led-saas"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "more-seats",
+            "description": "Public Pro pricing is per seat.",
+            "confidence": "verified"
+          },
+          {
+            "type": "enterprise-upgrade",
+            "description": "Business bundles advanced controls and agents through a custom offer.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "Jasper monetizes an AI marketing workspace primarily through seats and enterprise capability packaging."
+      },
+      "sources": [
+        {
+          "url": "https://www.jasper.ai/pricing",
+          "source_type": "official-pricing-page",
+          "title": "Jasper pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "plans",
+            "seat-pricing",
+            "business-offer"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "lovable",
+      "company": "Lovable",
+      "product": "Lovable",
+      "domain": "lovable.dev",
+      "pricing_url": "https://lovable.dev/pricing",
+      "classification": {
+        "product_models": [
+          "developer-tool",
+          "ai-agent"
+        ],
+        "pricing_components": [
+          "subscription",
+          "credit-based",
+          "included-credits",
+          "usage-based",
+          "freemium",
+          "enterprise-contract"
+        ],
+        "charge_metrics": [
+          "credit"
+        ],
+        "customer_value_metrics": [
+          "developer-productivity",
+          "coding-workflow"
+        ]
+      },
+      "observed": {
+        "pricing_architecture": "Lovable uses a workspace-level shared credit pool rather than a per-seat model; credits fund building, cloud hosting, and in-app AI features. The public Free plan includes daily build credits plus cloud and AI-feature allowances. The captured source did not expose a full paid tier table.",
+        "plans": [
+          {
+            "name": "Free",
+            "price": 0,
+            "currency": "USD",
+            "billing_period": "month",
+            "price_note": "Includes 5 daily build credits (up to 30/month), 20 Cloud credits, and 4 AI-feature credits in captured source.",
+            "public_price": true
+          },
+          {
+            "name": "Paid workspace plans",
+            "price_note": "Official pricing page presents shared-credit plans; capture did not record a complete paid price table.",
+            "public_price": true
+          },
+          {
+            "name": "Enterprise",
+            "custom_pricing": true
+          }
+        ],
+        "free_access": {
+          "available": true,
+          "note": "Free plan has published build, cloud, and AI-feature allowances."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "shared-workspace-credits"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "shared-credit-consumption",
+            "description": "One pool funds product building, hosting, and AI features across a workspace.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "Lovable makes collaboration frictionless by pooling metered AI and cloud capacity at the workspace level."
+      },
+      "sources": [
+        {
+          "url": "https://lovable.dev/pricing",
+          "source_type": "official-pricing-page",
+          "title": "Lovable pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "free-allowances",
+            "shared-credits",
+            "billing-scope"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "mistral-ai",
+      "company": "Mistral AI",
+      "product": "La Plateforme",
+      "domain": "mistral.ai",
+      "pricing_url": "https://mistral.ai/pricing/",
+      "classification": {
+        "product_models": [
+          "ai-infrastructure",
+          "foundation-model-api"
+        ],
+        "pricing_components": [
+          "batch-discount",
+          "enterprise-contract",
+          "model-specific",
+          "usage-based"
+        ],
+        "charge_metrics": [
+          "input-token",
+          "output-token"
+        ],
+        "customer_value_metrics": [
+          "model-inference"
+        ]
+      },
+      "observed": {
+        "pricing_architecture": "Published model API pricing differentiates input and output tokens, with batch processing and enterprise options shown separately.",
+        "plans": [
+          {
+            "name": "API",
+            "price_note": "Published model-specific token rates.",
+            "billing_period": "usage",
+            "public_price": true
+          },
+          {
+            "name": "Enterprise",
+            "custom_pricing": true
+          }
+        ],
+        "free_access": {
+          "available": false,
+          "note": "No general free production tier recorded."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "consumption-monetization"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "token-volume",
+            "description": "Token consumption and model selection drive spend.",
+            "confidence": "verified"
+          },
+          {
+            "type": "batch-adoption",
+            "description": "Batch processing is priced as a distinct usage path.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "Mistral uses a direct per-model token meter and an efficiency-oriented batch lane."
+      },
+      "sources": [
+        {
+          "url": "https://mistral.ai/pricing/",
+          "source_type": "official-pricing-page",
+          "title": "Mistral AI pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "pricing-model",
+            "charge-metric",
+            "enterprise"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "notion-ai",
+      "company": "Notion",
+      "product": "Notion AI and Custom Agents",
+      "domain": "notion.com",
+      "pricing_url": "https://www.notion.com/pricing",
+      "classification": {
+        "product_models": [
+          "ai-enabled-saas",
+          "horizontal-ai-application",
+          "ai-agent"
+        ],
+        "pricing_components": [
+          "subscription",
+          "seat-based",
+          "included-usage",
+          "credit-based",
+          "usage-based",
+          "freemium",
+          "enterprise-contract"
+        ],
+        "charge_metrics": [
+          "user-seat",
+          "credit"
+        ],
+        "customer_value_metrics": []
+      },
+      "observed": {
+        "pricing_architecture": "Notion packages AI within workspace subscriptions and offers Custom Agents as a credit-priced layer after trial. The pricing page lists Free, Plus, Business, and custom Enterprise workspace tiers; core AI is included in Business and Enterprise.",
+        "plans": [
+          {
+            "name": "Free",
+            "price": 0,
+            "currency": "USD",
+            "billing_period": "month",
+            "public_price": true
+          },
+          {
+            "name": "Plus",
+            "price": 10,
+            "currency": "USD",
+            "billing_period": "month",
+            "per_unit": "member",
+            "public_price": true
+          },
+          {
+            "name": "Business",
+            "price": 20,
+            "currency": "USD",
+            "billing_period": "month",
+            "per_unit": "member",
+            "public_price": true
+          },
+          {
+            "name": "Custom Agents",
+            "price": 10,
+            "currency": "USD",
+            "per_unit": "1000 credits",
+            "public_price": true
+          },
+          {
+            "name": "Enterprise",
+            "custom_pricing": true
+          }
+        ],
+        "free_access": {
+          "available": true,
+          "note": "A Free workspace tier is published; AI access and trials vary by feature and plan."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "bundled-ai",
+          "credit-abstraction"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "workspace-upgrade",
+            "description": "AI capability supports migration to higher workspace tiers.",
+            "confidence": "verified"
+          },
+          {
+            "type": "agent-credit-consumption",
+            "description": "Custom Agent credits create a usage expansion path.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "Notion layers an agent credit pool onto an existing per-member workspace model."
+      },
+      "sources": [
+        {
+          "url": "https://www.notion.com/pricing",
+          "source_type": "official-pricing-page",
+          "title": "Notion pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "workspace-plans",
+            "custom-agent-credits",
+            "ai-inclusion"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "url": "https://www.notion.com/product/ai",
+          "source_type": "official-product-page",
+          "title": "Notion AI",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "ai-product"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
       "id": "openai-api",
       "company": "OpenAI",
       "product": "OpenAI API",
@@ -494,6 +1964,361 @@
       "captured_at": "2026-08-14",
       "last_verified_at": "2026-08-14",
       "review_status": "verified"
+    },
+    {
+      "id": "replicate",
+      "company": "Replicate",
+      "product": "Replicate API",
+      "domain": "replicate.com",
+      "pricing_url": "https://replicate.com/pricing",
+      "classification": {
+        "product_models": [
+          "ai-infrastructure",
+          "marketplace"
+        ],
+        "pricing_components": [
+          "enterprise-contract",
+          "model-specific",
+          "usage-based"
+        ],
+        "charge_metrics": [
+          "input-token",
+          "model-usage",
+          "output-token"
+        ],
+        "customer_value_metrics": [
+          "model-inference"
+        ]
+      },
+      "observed": {
+        "pricing_architecture": "Pay-as-you-go marketplace and model-hosting pricing: public models may be priced by hardware time or by inputs and outputs; private deployments can bill for online instance time.",
+        "plans": [
+          {
+            "name": "API",
+            "price_note": "Published, model- and hardware-specific usage rates.",
+            "billing_period": "usage",
+            "public_price": true
+          }
+        ],
+        "free_access": {
+          "available": false,
+          "note": "No general free production allowance recorded."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "consumption-monetization",
+          "marketplace-monetization"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "compute-time",
+            "description": "Spend rises with runtime and selected hardware.",
+            "confidence": "verified"
+          },
+          {
+            "type": "model-mix",
+            "description": "Different models expose different units and prices.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "Replicate exposes heterogeneous model costs directly, using runtime or model-native output units instead of a single abstract credit."
+      },
+      "sources": [
+        {
+          "url": "https://replicate.com/pricing",
+          "source_type": "official-pricing-page",
+          "title": "Replicate pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "pricing-model",
+            "charge-metric",
+            "enterprise"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "replit",
+      "company": "Replit",
+      "product": "Replit",
+      "domain": "replit.com",
+      "pricing_url": "https://replit.com/pricing",
+      "classification": {
+        "product_models": [
+          "developer-tool",
+          "ai-agent",
+          "ai-enabled-service"
+        ],
+        "pricing_components": [
+          "subscription",
+          "included-credits",
+          "credit-based",
+          "usage-based",
+          "freemium",
+          "enterprise-contract"
+        ],
+        "charge_metrics": [
+          "credit",
+          "model-usage"
+        ],
+        "customer_value_metrics": [
+          "developer-productivity",
+          "coding-workflow"
+        ]
+      },
+      "observed": {
+        "pricing_architecture": "Replit offers a free entry tier, subscriptions with monthly platform credits, and usage-based spending across Agent and cloud services. Agent execution is effort-priced and may pass through third-party model cost at public API rates.",
+        "plans": [
+          {
+            "name": "Starter",
+            "price": 0,
+            "currency": "USD",
+            "billing_period": "month",
+            "public_price": true
+          },
+          {
+            "name": "Core annual",
+            "price": 20,
+            "currency": "USD",
+            "billing_period": "month",
+            "price_note": "Annual price; includes $25 monthly platform credits in captured source.",
+            "public_price": true
+          },
+          {
+            "name": "Pro annual",
+            "price": 95,
+            "currency": "USD",
+            "billing_period": "month",
+            "price_note": "Annual price; includes $100 monthly platform credits in captured source.",
+            "public_price": true
+          },
+          {
+            "name": "Enterprise",
+            "custom_pricing": true
+          }
+        ],
+        "free_access": {
+          "available": true,
+          "note": "Starter is listed as a free tier."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "platform-credit-pool",
+          "hybrid-subscription-usage"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "increased-platform-usage",
+            "description": "Credits cover both AI Agent and cloud services, increasing account expansion surface.",
+            "confidence": "verified"
+          },
+          {
+            "type": "tier-upgrade",
+            "description": "Higher subscription tiers include larger monthly credit allowances.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "Replit uses one credit pool to fund AI creation and the deployed application infrastructure it can generate."
+      },
+      "sources": [
+        {
+          "url": "https://replit.com/pricing",
+          "source_type": "official-pricing-page",
+          "title": "Replit pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "plans",
+            "included-credits",
+            "free-tier"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "url": "https://docs.replit.com/billing/ai-billing",
+          "source_type": "official-docs",
+          "title": "Replit AI billing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "agent-billing",
+            "model-costs"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "scale-ai",
+      "company": "Scale AI",
+      "product": "Scale Data Engine",
+      "domain": "scale.com",
+      "pricing_url": "https://scale.com/pricing",
+      "classification": {
+        "product_models": [
+          "ai-enabled-saas",
+          "data-intelligence-product"
+        ],
+        "pricing_components": [
+          "enterprise-contract",
+          "outcome-based",
+          "project-based"
+        ],
+        "charge_metrics": [
+          "model-usage"
+        ],
+        "customer_value_metrics": [
+          "model-inference"
+        ]
+      },
+      "observed": {
+        "pricing_architecture": "Scale presents enterprise data and evaluation products through contact-led pricing rather than a public rate card.",
+        "plans": [
+          {
+            "name": "Enterprise",
+            "custom_pricing": true
+          }
+        ],
+        "free_access": {
+          "available": false,
+          "note": "No public free plan recorded."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "enterprise-contracting",
+          "outcome-monetization"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "program-scope",
+            "description": "Commercial scope expands with data, evaluation, and deployment programs.",
+            "confidence": "high"
+          }
+        ],
+        "monetization_summary": "Scale uses a sales-led model appropriate to bespoke data and evaluation programs, where a generic self-serve unit would underrepresent delivery scope."
+      },
+      "sources": [
+        {
+          "url": "https://scale.com/pricing",
+          "source_type": "official-pricing-page",
+          "title": "Scale pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "enterprise",
+            "pricing-model"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "together-ai",
+      "company": "Together AI",
+      "product": "Together AI Platform",
+      "domain": "together.ai",
+      "pricing_url": "https://www.together.ai/pricing",
+      "classification": {
+        "product_models": [
+          "ai-infrastructure",
+          "foundation-model-api"
+        ],
+        "pricing_components": [
+          "enterprise-contract",
+          "model-specific",
+          "usage-based"
+        ],
+        "charge_metrics": [
+          "cached-input-token",
+          "input-token",
+          "model-usage",
+          "output-token"
+        ],
+        "customer_value_metrics": [
+          "model-inference"
+        ]
+      },
+      "observed": {
+        "pricing_architecture": "Serverless inference has published model-specific token rates; the platform also offers provisioned throughput, dedicated inference, compute, and custom training.",
+        "plans": [
+          {
+            "name": "Serverless Inference",
+            "price_note": "Published per-million-token model rates.",
+            "billing_period": "usage",
+            "public_price": true
+          },
+          {
+            "name": "Dedicated offerings",
+            "custom_pricing": true
+          }
+        ],
+        "free_access": {
+          "available": false,
+          "note": "No general free tier recorded from the pricing page."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "consumption-monetization",
+          "capacity-monetization"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "token-volume",
+            "description": "Serverless inference is metered by model input and output tokens.",
+            "confidence": "verified"
+          },
+          {
+            "type": "commitment",
+            "description": "Teams can progress from serverless to dedicated capacity at scale.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "Together pairs a transparent serverless token meter with higher-control capacity products for scale buyers."
+      },
+      "sources": [
+        {
+          "url": "https://www.together.ai/pricing",
+          "source_type": "official-pricing-page",
+          "title": "Together AI pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "pricing-model",
+            "charge-metric",
+            "enterprise"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
     }
   ],
   "summary": [
@@ -527,6 +2352,130 @@
       "freshness": "Fresh",
       "review_status": "verified",
       "summary": "The public rate card preserves a close link between inference inputs and revenue, while cache and batch mechanisms price efficiency explicitly."
+    },
+    {
+      "id": "assemblyai",
+      "company": "AssemblyAI",
+      "product": "AssemblyAI API",
+      "domain": "assemblyai.com",
+      "pricing_url": "https://www.assemblyai.com/pricing",
+      "product_models": [
+        "vertical-ai"
+      ],
+      "pricing_components": [
+        "capability-based",
+        "enterprise-contract",
+        "tiered",
+        "usage-based"
+      ],
+      "charge_metrics": [
+        "audio-minute",
+        "model-usage"
+      ],
+      "customer_value_metrics": [
+        "generated-audio"
+      ],
+      "free_access": true,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "AssemblyAI monetizes a customer-legible unit—audio processed—then expands through richer speech intelligence."
+    },
+    {
+      "id": "bolt",
+      "company": "StackBlitz",
+      "product": "Bolt.new",
+      "domain": "bolt.new",
+      "pricing_url": "https://bolt.new/pricing",
+      "product_models": [
+        "developer-tool",
+        "ai-agent"
+      ],
+      "pricing_components": [
+        "subscription",
+        "included-usage",
+        "usage-based",
+        "freemium",
+        "seat-based",
+        "enterprise-contract",
+        "tiered"
+      ],
+      "charge_metrics": [
+        "input-token",
+        "output-token",
+        "user-seat"
+      ],
+      "customer_value_metrics": [
+        "developer-productivity",
+        "coding-workflow"
+      ],
+      "free_access": true,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "Bolt pairs a developer-friendly token allowance with a team-seat offer and enterprise contract path."
+    },
+    {
+      "id": "claude-team",
+      "company": "Anthropic",
+      "product": "Claude Team",
+      "domain": "claude.com",
+      "pricing_url": "https://claude.com/pricing",
+      "product_models": [
+        "ai-copilot",
+        "horizontal-ai-application"
+      ],
+      "pricing_components": [
+        "subscription",
+        "seat-based",
+        "usage-based",
+        "hybrid-seat-usage",
+        "model-specific",
+        "enterprise-contract"
+      ],
+      "charge_metrics": [
+        "user-seat",
+        "model-usage"
+      ],
+      "customer_value_metrics": [],
+      "free_access": false,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "Claude Team explicitly combines organization access revenue with a variable model-consumption layer."
+    },
+    {
+      "id": "cohere",
+      "company": "Cohere",
+      "product": "Cohere API",
+      "domain": "cohere.com",
+      "pricing_url": "https://cohere.com/pricing",
+      "product_models": [
+        "ai-enabled-saas",
+        "foundation-model-api"
+      ],
+      "pricing_components": [
+        "enterprise-contract",
+        "model-specific",
+        "usage-based"
+      ],
+      "charge_metrics": [
+        "input-token",
+        "model-usage",
+        "output-token"
+      ],
+      "customer_value_metrics": [
+        "model-inference"
+      ],
+      "free_access": false,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "Cohere combines self-serve model consumption with enterprise commercial packaging for private deployments and organizational use."
     },
     {
       "id": "cursor",
@@ -563,6 +2512,95 @@
       "summary": "Cursor blends predictable seat revenue with model-usage expansion, keeping its customer-facing product subscription simple while preserving a metered backstop."
     },
     {
+      "id": "deepl-api",
+      "company": "DeepL",
+      "product": "DeepL API",
+      "domain": "deepl.com",
+      "pricing_url": "https://www.deepl.com/en/pro-api",
+      "product_models": [
+        "vertical-ai"
+      ],
+      "pricing_components": [
+        "enterprise-contract",
+        "included-usage",
+        "subscription",
+        "usage-based"
+      ],
+      "charge_metrics": [
+        "character"
+      ],
+      "customer_value_metrics": [
+        "model-inference"
+      ],
+      "free_access": true,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "DeepL anchors recurring revenue with an API subscription while preserving a transparent volume meter tied to translated content."
+    },
+    {
+      "id": "descript",
+      "company": "Descript",
+      "product": "Descript",
+      "domain": "descript.com",
+      "pricing_url": "https://www.descript.com/pricing",
+      "product_models": [
+        "ai-enabled-saas",
+        "horizontal-ai-application"
+      ],
+      "pricing_components": [
+        "subscription",
+        "seat-based",
+        "included-credits",
+        "credit-based",
+        "freemium",
+        "enterprise-contract"
+      ],
+      "charge_metrics": [
+        "user-seat",
+        "credit"
+      ],
+      "customer_value_metrics": [],
+      "free_access": true,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "Descript wraps AI-intensive editing features in a creator-friendly seat subscription with capacity allowances."
+    },
+    {
+      "id": "elevenagents",
+      "company": "ElevenLabs",
+      "product": "ElevenAgents",
+      "domain": "elevenlabs.io",
+      "pricing_url": "https://help.elevenlabs.io/hc/en-us/articles/29298065878929-How-much-does-ElevenAgents-cost",
+      "product_models": [
+        "ai-agent",
+        "ai-infrastructure"
+      ],
+      "pricing_components": [
+        "usage-based",
+        "subscription",
+        "included-usage",
+        "model-specific",
+        "enterprise-contract"
+      ],
+      "charge_metrics": [
+        "audio-minute",
+        "model-usage"
+      ],
+      "customer_value_metrics": [
+        "voice-workflow"
+      ],
+      "free_access": false,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "ElevenAgents layers channel-specific usage and external model pass-through on top of the vendor's subscription structure."
+    },
+    {
       "id": "elevenlabs",
       "company": "ElevenLabs",
       "product": "ElevenLabs",
@@ -595,6 +2633,36 @@
       "freshness": "Fresh",
       "review_status": "verified",
       "summary": "Credits translate heterogeneous voice-generation workloads into a familiar allowance and upgrade ladder."
+    },
+    {
+      "id": "fireworks-ai",
+      "company": "Fireworks AI",
+      "product": "Fireworks AI",
+      "domain": "fireworks.ai",
+      "pricing_url": "https://fireworks.ai/pricing",
+      "product_models": [
+        "ai-infrastructure",
+        "foundation-model-api"
+      ],
+      "pricing_components": [
+        "enterprise-contract",
+        "model-specific",
+        "usage-based"
+      ],
+      "charge_metrics": [
+        "input-token",
+        "model-usage",
+        "output-token"
+      ],
+      "customer_value_metrics": [
+        "model-inference"
+      ],
+      "free_access": false,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "Fireworks creates a familiar land-and-expand path from metered inference into dedicated capacity."
     },
     {
       "id": "github-copilot",
@@ -630,6 +2698,242 @@
       "summary": "A seat subscription is augmented with a money-denominated credit pool that makes variable model use controllable at the organization level."
     },
     {
+      "id": "groqcloud",
+      "company": "Groq",
+      "product": "GroqCloud",
+      "domain": "groq.com",
+      "pricing_url": "https://console.groq.com/docs/models",
+      "product_models": [
+        "ai-infrastructure",
+        "foundation-model-api"
+      ],
+      "pricing_components": [
+        "enterprise-contract",
+        "model-specific",
+        "usage-based"
+      ],
+      "charge_metrics": [
+        "input-token",
+        "output-token"
+      ],
+      "customer_value_metrics": [
+        "model-inference"
+      ],
+      "free_access": true,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "GroqCloud commercializes high-speed inference through a familiar token meter, leaving the performance differentiation in the product rather than the billing unit."
+    },
+    {
+      "id": "hugging-face-inference",
+      "company": "Hugging Face",
+      "product": "Inference Providers",
+      "domain": "huggingface.co",
+      "pricing_url": "https://huggingface.co/docs/inference-providers/pricing",
+      "product_models": [
+        "ai-infrastructure",
+        "foundation-model-api",
+        "marketplace"
+      ],
+      "pricing_components": [
+        "credit-based",
+        "enterprise-contract",
+        "platform-fee-usage",
+        "subscription",
+        "usage-based"
+      ],
+      "charge_metrics": [
+        "credit",
+        "input-token",
+        "model-usage",
+        "output-token"
+      ],
+      "customer_value_metrics": [
+        "model-inference"
+      ],
+      "free_access": true,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "Hugging Face abstracts a multi-provider inference marketplace behind credits while using subscriptions to bundle ongoing purchasing power."
+    },
+    {
+      "id": "intercom-copilot",
+      "company": "Intercom",
+      "product": "Intercom Copilot",
+      "domain": "intercom.com",
+      "pricing_url": "https://www.intercom.com/help/en/articles/9121384-copilot-included-and-unlimited-usage",
+      "product_models": [
+        "ai-copilot",
+        "vertical-ai"
+      ],
+      "pricing_components": [
+        "seat-based",
+        "subscription",
+        "included-usage",
+        "freemium"
+      ],
+      "charge_metrics": [
+        "user-seat"
+      ],
+      "customer_value_metrics": [],
+      "free_access": true,
+      "enterprise": false,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "Intercom monetizes agent-assist separately from Fin's outcome-priced customer automation."
+    },
+    {
+      "id": "intercom-fin",
+      "company": "Intercom",
+      "product": "Fin AI Agent",
+      "domain": "intercom.com",
+      "pricing_url": "https://www.intercom.com/pricing",
+      "product_models": [
+        "ai-agent",
+        "vertical-ai"
+      ],
+      "pricing_components": [
+        "outcome-based",
+        "usage-based",
+        "seat-based",
+        "enterprise-contract"
+      ],
+      "charge_metrics": [],
+      "customer_value_metrics": [],
+      "free_access": false,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "Fin connects its consumption unit to a support outcome rather than a seat or model input."
+    },
+    {
+      "id": "jasper",
+      "company": "Jasper",
+      "product": "Jasper",
+      "domain": "jasper.ai",
+      "pricing_url": "https://www.jasper.ai/pricing",
+      "product_models": [
+        "horizontal-ai-application",
+        "ai-enabled-saas"
+      ],
+      "pricing_components": [
+        "subscription",
+        "seat-based",
+        "capability-based",
+        "enterprise-contract"
+      ],
+      "charge_metrics": [
+        "user-seat"
+      ],
+      "customer_value_metrics": [],
+      "free_access": false,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "Jasper monetizes an AI marketing workspace primarily through seats and enterprise capability packaging."
+    },
+    {
+      "id": "lovable",
+      "company": "Lovable",
+      "product": "Lovable",
+      "domain": "lovable.dev",
+      "pricing_url": "https://lovable.dev/pricing",
+      "product_models": [
+        "developer-tool",
+        "ai-agent"
+      ],
+      "pricing_components": [
+        "subscription",
+        "credit-based",
+        "included-credits",
+        "usage-based",
+        "freemium",
+        "enterprise-contract"
+      ],
+      "charge_metrics": [
+        "credit"
+      ],
+      "customer_value_metrics": [
+        "developer-productivity",
+        "coding-workflow"
+      ],
+      "free_access": true,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "Lovable makes collaboration frictionless by pooling metered AI and cloud capacity at the workspace level."
+    },
+    {
+      "id": "mistral-ai",
+      "company": "Mistral AI",
+      "product": "La Plateforme",
+      "domain": "mistral.ai",
+      "pricing_url": "https://mistral.ai/pricing/",
+      "product_models": [
+        "ai-infrastructure",
+        "foundation-model-api"
+      ],
+      "pricing_components": [
+        "batch-discount",
+        "enterprise-contract",
+        "model-specific",
+        "usage-based"
+      ],
+      "charge_metrics": [
+        "input-token",
+        "output-token"
+      ],
+      "customer_value_metrics": [
+        "model-inference"
+      ],
+      "free_access": false,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "Mistral uses a direct per-model token meter and an efficiency-oriented batch lane."
+    },
+    {
+      "id": "notion-ai",
+      "company": "Notion",
+      "product": "Notion AI and Custom Agents",
+      "domain": "notion.com",
+      "pricing_url": "https://www.notion.com/pricing",
+      "product_models": [
+        "ai-enabled-saas",
+        "horizontal-ai-application",
+        "ai-agent"
+      ],
+      "pricing_components": [
+        "subscription",
+        "seat-based",
+        "included-usage",
+        "credit-based",
+        "usage-based",
+        "freemium",
+        "enterprise-contract"
+      ],
+      "charge_metrics": [
+        "user-seat",
+        "credit"
+      ],
+      "customer_value_metrics": [],
+      "free_access": true,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "Notion layers an agent credit pool onto an existing per-member workspace model."
+    },
+    {
       "id": "openai-api",
       "company": "OpenAI",
       "product": "OpenAI API",
@@ -658,6 +2962,129 @@
       "freshness": "Fresh",
       "review_status": "verified",
       "summary": "A direct infrastructure model: technical inference consumption is also the customer-facing billable unit."
+    },
+    {
+      "id": "replicate",
+      "company": "Replicate",
+      "product": "Replicate API",
+      "domain": "replicate.com",
+      "pricing_url": "https://replicate.com/pricing",
+      "product_models": [
+        "ai-infrastructure",
+        "marketplace"
+      ],
+      "pricing_components": [
+        "enterprise-contract",
+        "model-specific",
+        "usage-based"
+      ],
+      "charge_metrics": [
+        "input-token",
+        "model-usage",
+        "output-token"
+      ],
+      "customer_value_metrics": [
+        "model-inference"
+      ],
+      "free_access": false,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "Replicate exposes heterogeneous model costs directly, using runtime or model-native output units instead of a single abstract credit."
+    },
+    {
+      "id": "replit",
+      "company": "Replit",
+      "product": "Replit",
+      "domain": "replit.com",
+      "pricing_url": "https://replit.com/pricing",
+      "product_models": [
+        "developer-tool",
+        "ai-agent",
+        "ai-enabled-service"
+      ],
+      "pricing_components": [
+        "subscription",
+        "included-credits",
+        "credit-based",
+        "usage-based",
+        "freemium",
+        "enterprise-contract"
+      ],
+      "charge_metrics": [
+        "credit",
+        "model-usage"
+      ],
+      "customer_value_metrics": [
+        "developer-productivity",
+        "coding-workflow"
+      ],
+      "free_access": true,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "Replit uses one credit pool to fund AI creation and the deployed application infrastructure it can generate."
+    },
+    {
+      "id": "scale-ai",
+      "company": "Scale AI",
+      "product": "Scale Data Engine",
+      "domain": "scale.com",
+      "pricing_url": "https://scale.com/pricing",
+      "product_models": [
+        "ai-enabled-saas",
+        "data-intelligence-product"
+      ],
+      "pricing_components": [
+        "enterprise-contract",
+        "outcome-based",
+        "project-based"
+      ],
+      "charge_metrics": [
+        "model-usage"
+      ],
+      "customer_value_metrics": [
+        "model-inference"
+      ],
+      "free_access": false,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "Scale uses a sales-led model appropriate to bespoke data and evaluation programs, where a generic self-serve unit would underrepresent delivery scope."
+    },
+    {
+      "id": "together-ai",
+      "company": "Together AI",
+      "product": "Together AI Platform",
+      "domain": "together.ai",
+      "pricing_url": "https://www.together.ai/pricing",
+      "product_models": [
+        "ai-infrastructure",
+        "foundation-model-api"
+      ],
+      "pricing_components": [
+        "enterprise-contract",
+        "model-specific",
+        "usage-based"
+      ],
+      "charge_metrics": [
+        "cached-input-token",
+        "input-token",
+        "model-usage",
+        "output-token"
+      ],
+      "customer_value_metrics": [
+        "model-inference"
+      ],
+      "free_access": false,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "Together pairs a transparent serverless token meter with higher-control capacity products for scale buyers."
     }
   ]
 }

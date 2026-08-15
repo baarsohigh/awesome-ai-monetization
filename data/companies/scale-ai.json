@@ -1,0 +1,71 @@
+{
+  "id": "scale-ai",
+  "company": "Scale AI",
+  "product": "Scale Data Engine",
+  "domain": "scale.com",
+  "pricing_url": "https://scale.com/pricing",
+  "classification": {
+    "product_models": [
+      "ai-enabled-saas",
+      "data-intelligence-product"
+    ],
+    "pricing_components": [
+      "enterprise-contract",
+      "outcome-based",
+      "project-based"
+    ],
+    "charge_metrics": [
+      "model-usage"
+    ],
+    "customer_value_metrics": [
+      "model-inference"
+    ]
+  },
+  "observed": {
+    "pricing_architecture": "Scale presents enterprise data and evaluation products through contact-led pricing rather than a public rate card.",
+    "plans": [
+      {
+        "name": "Enterprise",
+        "custom_pricing": true
+      }
+    ],
+    "free_access": {
+      "available": false,
+      "note": "No public free plan recorded."
+    },
+    "enterprise": {
+      "offered": true,
+      "contact_sales": true
+    }
+  },
+  "analysis": {
+    "monetization_archetypes": [
+      "enterprise-contracting",
+      "outcome-monetization"
+    ],
+    "expansion_vectors": [
+      {
+        "type": "program-scope",
+        "description": "Commercial scope expands with data, evaluation, and deployment programs.",
+        "confidence": "high"
+      }
+    ],
+    "monetization_summary": "Scale uses a sales-led model appropriate to bespoke data and evaluation programs, where a generic self-serve unit would underrepresent delivery scope."
+  },
+  "sources": [
+    {
+      "url": "https://scale.com/pricing",
+      "source_type": "official-pricing-page",
+      "title": "Scale pricing",
+      "accessed_at": "2026-08-14",
+      "supports": [
+        "enterprise",
+        "pricing-model"
+      ],
+      "confidence": "verified"
+    }
+  ],
+  "captured_at": "2026-08-14",
+  "last_verified_at": "2026-08-14",
+  "review_status": "verified"
+}

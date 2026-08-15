@@ -1,0 +1,79 @@
+{
+  "id": "deepl-api",
+  "company": "DeepL",
+  "product": "DeepL API",
+  "domain": "deepl.com",
+  "pricing_url": "https://www.deepl.com/en/pro-api",
+  "classification": {
+    "product_models": [
+      "vertical-ai"
+    ],
+    "pricing_components": [
+      "enterprise-contract",
+      "included-usage",
+      "subscription",
+      "usage-based"
+    ],
+    "charge_metrics": [
+      "character"
+    ],
+    "customer_value_metrics": [
+      "model-inference"
+    ]
+  },
+  "observed": {
+    "pricing_architecture": "DeepL Pro API combines a recurring subscription with character-based translation consumption; document translation and higher-volume needs are separately packaged.",
+    "plans": [
+      {
+        "name": "DeepL API",
+        "price_note": "Subscription and character-based usage pricing are published by region and plan.",
+        "billing_period": "month",
+        "public_price": true
+      }
+    ],
+    "free_access": {
+      "available": true,
+      "note": "DeepL offers API Free subject to a monthly character allowance."
+    },
+    "enterprise": {
+      "offered": true,
+      "contact_sales": true
+    }
+  },
+  "analysis": {
+    "monetization_archetypes": [
+      "hybrid-monetization",
+      "consumption-monetization"
+    ],
+    "expansion_vectors": [
+      {
+        "type": "character-volume",
+        "description": "Translation usage grows with characters processed.",
+        "confidence": "verified"
+      },
+      {
+        "type": "tier-upgrade",
+        "description": "Higher-volume and business needs lead to paid Pro packaging.",
+        "confidence": "verified"
+      }
+    ],
+    "monetization_summary": "DeepL anchors recurring revenue with an API subscription while preserving a transparent volume meter tied to translated content."
+  },
+  "sources": [
+    {
+      "url": "https://www.deepl.com/en/pro-api",
+      "source_type": "official-pricing-page",
+      "title": "DeepL Pro API",
+      "accessed_at": "2026-08-14",
+      "supports": [
+        "pricing-model",
+        "charge-metric",
+        "free-tier"
+      ],
+      "confidence": "verified"
+    }
+  ],
+  "captured_at": "2026-08-14",
+  "last_verified_at": "2026-08-14",
+  "review_status": "verified"
+}

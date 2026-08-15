@@ -1,0 +1,85 @@
+{
+  "id": "fireworks-ai",
+  "company": "Fireworks AI",
+  "product": "Fireworks AI",
+  "domain": "fireworks.ai",
+  "pricing_url": "https://fireworks.ai/pricing",
+  "classification": {
+    "product_models": [
+      "ai-infrastructure",
+      "foundation-model-api"
+    ],
+    "pricing_components": [
+      "enterprise-contract",
+      "model-specific",
+      "usage-based"
+    ],
+    "charge_metrics": [
+      "input-token",
+      "model-usage",
+      "output-token"
+    ],
+    "customer_value_metrics": [
+      "model-inference"
+    ]
+  },
+  "observed": {
+    "pricing_architecture": "The public price page presents serverless model inference alongside dedicated deployment and enterprise options; rates vary by model and deployment mode.",
+    "plans": [
+      {
+        "name": "Serverless",
+        "price_note": "Published model-specific inference pricing.",
+        "billing_period": "usage",
+        "public_price": true
+      },
+      {
+        "name": "Dedicated deployment",
+        "custom_pricing": true
+      }
+    ],
+    "free_access": {
+      "available": false,
+      "note": "No general free tier recorded."
+    },
+    "enterprise": {
+      "offered": true,
+      "contact_sales": true
+    }
+  },
+  "analysis": {
+    "monetization_archetypes": [
+      "consumption-monetization",
+      "capacity-monetization"
+    ],
+    "expansion_vectors": [
+      {
+        "type": "token-volume",
+        "description": "Inference usage scales with token volume and model selection.",
+        "confidence": "verified"
+      },
+      {
+        "type": "dedicated-capacity",
+        "description": "Dedicated deployment is a higher-control buying path.",
+        "confidence": "high"
+      }
+    ],
+    "monetization_summary": "Fireworks creates a familiar land-and-expand path from metered inference into dedicated capacity."
+  },
+  "sources": [
+    {
+      "url": "https://fireworks.ai/pricing",
+      "source_type": "official-pricing-page",
+      "title": "Fireworks AI pricing",
+      "accessed_at": "2026-08-14",
+      "supports": [
+        "pricing-model",
+        "plans",
+        "enterprise"
+      ],
+      "confidence": "verified"
+    }
+  ],
+  "captured_at": "2026-08-14",
+  "last_verified_at": "2026-08-14",
+  "review_status": "verified"
+}

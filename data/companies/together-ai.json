@@ -1,0 +1,86 @@
+{
+  "id": "together-ai",
+  "company": "Together AI",
+  "product": "Together AI Platform",
+  "domain": "together.ai",
+  "pricing_url": "https://www.together.ai/pricing",
+  "classification": {
+    "product_models": [
+      "ai-infrastructure",
+      "foundation-model-api"
+    ],
+    "pricing_components": [
+      "enterprise-contract",
+      "model-specific",
+      "usage-based"
+    ],
+    "charge_metrics": [
+      "cached-input-token",
+      "input-token",
+      "model-usage",
+      "output-token"
+    ],
+    "customer_value_metrics": [
+      "model-inference"
+    ]
+  },
+  "observed": {
+    "pricing_architecture": "Serverless inference has published model-specific token rates; the platform also offers provisioned throughput, dedicated inference, compute, and custom training.",
+    "plans": [
+      {
+        "name": "Serverless Inference",
+        "price_note": "Published per-million-token model rates.",
+        "billing_period": "usage",
+        "public_price": true
+      },
+      {
+        "name": "Dedicated offerings",
+        "custom_pricing": true
+      }
+    ],
+    "free_access": {
+      "available": false,
+      "note": "No general free tier recorded from the pricing page."
+    },
+    "enterprise": {
+      "offered": true,
+      "contact_sales": true
+    }
+  },
+  "analysis": {
+    "monetization_archetypes": [
+      "consumption-monetization",
+      "capacity-monetization"
+    ],
+    "expansion_vectors": [
+      {
+        "type": "token-volume",
+        "description": "Serverless inference is metered by model input and output tokens.",
+        "confidence": "verified"
+      },
+      {
+        "type": "commitment",
+        "description": "Teams can progress from serverless to dedicated capacity at scale.",
+        "confidence": "verified"
+      }
+    ],
+    "monetization_summary": "Together pairs a transparent serverless token meter with higher-control capacity products for scale buyers."
+  },
+  "sources": [
+    {
+      "url": "https://www.together.ai/pricing",
+      "source_type": "official-pricing-page",
+      "title": "Together AI pricing",
+      "accessed_at": "2026-08-14",
+      "supports": [
+        "pricing-model",
+        "charge-metric",
+        "enterprise"
+      ],
+      "confidence": "verified"
+    }
+  ],
+  "captured_at": "2026-08-14",
+  "last_verified_at": "2026-08-14",
+  "review_status": "verified"
+}

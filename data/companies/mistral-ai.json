@@ -1,0 +1,84 @@
+{
+  "id": "mistral-ai",
+  "company": "Mistral AI",
+  "product": "La Plateforme",
+  "domain": "mistral.ai",
+  "pricing_url": "https://mistral.ai/pricing/",
+  "classification": {
+    "product_models": [
+      "ai-infrastructure",
+      "foundation-model-api"
+    ],
+    "pricing_components": [
+      "batch-discount",
+      "enterprise-contract",
+      "model-specific",
+      "usage-based"
+    ],
+    "charge_metrics": [
+      "input-token",
+      "output-token"
+    ],
+    "customer_value_metrics": [
+      "model-inference"
+    ]
+  },
+  "observed": {
+    "pricing_architecture": "Published model API pricing differentiates input and output tokens, with batch processing and enterprise options shown separately.",
+    "plans": [
+      {
+        "name": "API",
+        "price_note": "Published model-specific token rates.",
+        "billing_period": "usage",
+        "public_price": true
+      },
+      {
+        "name": "Enterprise",
+        "custom_pricing": true
+      }
+    ],
+    "free_access": {
+      "available": false,
+      "note": "No general free production tier recorded."
+    },
+    "enterprise": {
+      "offered": true,
+      "contact_sales": true
+    }
+  },
+  "analysis": {
+    "monetization_archetypes": [
+      "consumption-monetization"
+    ],
+    "expansion_vectors": [
+      {
+        "type": "token-volume",
+        "description": "Token consumption and model selection drive spend.",
+        "confidence": "verified"
+      },
+      {
+        "type": "batch-adoption",
+        "description": "Batch processing is priced as a distinct usage path.",
+        "confidence": "verified"
+      }
+    ],
+    "monetization_summary": "Mistral uses a direct per-model token meter and an efficiency-oriented batch lane."
+  },
+  "sources": [
+    {
+      "url": "https://mistral.ai/pricing/",
+      "source_type": "official-pricing-page",
+      "title": "Mistral AI pricing",
+      "accessed_at": "2026-08-14",
+      "supports": [
+        "pricing-model",
+        "charge-metric",
+        "enterprise"
+      ],
+      "confidence": "verified"
+    }
+  ],
+  "captured_at": "2026-08-14",
+  "last_verified_at": "2026-08-14",
+  "review_status": "verified"
+}

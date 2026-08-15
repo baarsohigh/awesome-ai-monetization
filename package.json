@@ -14,6 +14,8 @@
     "db:generate": "drizzle-kit generate",
     "validate:data": "node scripts/validate.mjs",
     "generate:data": "node scripts/generate.mjs",
+    "analyze:data": "node scripts/analyze.mjs",
+    "monitor:pricing": "node scripts/check-pricing-pages.mjs",
     "ai-monetization": "node bin/ai-monetization.mjs"
   },
   "dependencies": {
