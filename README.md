@@ -10,10 +10,9 @@ AI products often combine variable inference costs with seats, credits, usage, o
 
 ## What is included now
 
-- 5 verified, deliberately different seed records: model APIs, coding copilots, and voice generation.
-- 15 source-backed research candidates ready for structured import.
-- A normalized taxonomy, JSON Schema, dataset validator, generated JSON/CSV exports, local CLI, and a small JSON-lines agent adapter.
-- A static research explorer that visibly separates observed information from analysis.
+- 25 source-backed product records spanning model APIs, coding, customer support, voice, research, creative work, and AI infrastructure.
+- A normalized taxonomy, JSON Schema, dataset validator, generated JSON/CSV exports, CLI, and a local JSON-lines agent adapter.
+- Search, architecture filters, up-to-three-product comparison, and detailed source/analysis-separated research records.
 
 ## Use it
 
