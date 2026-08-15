@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://awesome-ai-monetization.org/schema/company.schema.json",
+  "title": "AI monetization record",
+  "type": "object",
+  "required": ["id", "company", "product", "domain", "pricing_url", "classification", "observed", "sources", "captured_at", "last_verified_at", "review_status"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "company": {"type": "string", "minLength": 1},
+    "product": {"type": "string", "minLength": 1},
+    "domain": {"type": "string", "pattern": "^[a-z0-9.-]+$"},
+    "pricing_url": {"type": "string", "format": "uri"},
+    "classification": {
+      "type": "object", "required": ["product_models", "pricing_components", "charge_metrics", "customer_value_metrics"],
+      "properties": {
+        "product_models": {"type": "array", "items": {"type": "string"}},
+        "pricing_components": {"type": "array", "items": {"type": "string"}},
+        "charge_metrics": {"type": "array", "items": {"type": "string"}},
+        "customer_value_metrics": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "observed": {"type": "object", "required": ["pricing_architecture", "plans", "free_access"], "properties": {"pricing_architecture": {"type": "string"}, "plans": {"type": "array"}, "free_access": {"type": "object"}}},
+    "analysis": {"type": "object"},
+    "sources": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["url", "source_type", "title", "accessed_at", "supports", "confidence"]}},
+    "captured_at": {"type": "string", "format": "date"},
+    "last_verified_at": {"type": "string", "format": "date"},
+    "review_status": {"enum": ["draft", "reviewed", "verified"]}
+  }
+}

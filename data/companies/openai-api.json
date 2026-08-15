@@ -1,0 +1,8 @@
+{
+  "id": "openai-api", "company": "OpenAI", "product": "OpenAI API", "domain": "openai.com", "pricing_url": "https://platform.openai.com/docs/pricing",
+  "classification": {"product_models": ["foundation-model-api", "ai-infrastructure"], "pricing_components": ["usage-based", "model-specific", "tiered"], "charge_metrics": ["input-token", "output-token", "cached-input-token"], "customer_value_metrics": ["model-inference"]},
+  "observed": {"pricing_architecture": "Model-specific pay-as-you-go rates expose distinct input, cached-input, and output token prices.", "plans": [{"name": "API", "price_note": "Published per-token model rates", "billing_period": "usage", "public_price": true}], "free_access": {"available": false, "note": "No general free API tier recorded in this seed record."}, "enterprise": {"offered": true, "contact_sales": true}},
+  "analysis": {"monetization_archetypes": ["consumption-monetization"], "expansion_vectors": [{"type": "api-volume", "description": "Spend increases with token consumption.", "confidence": "verified"}], "monetization_summary": "A direct infrastructure model: technical inference consumption is also the customer-facing billable unit."},
+  "sources": [{"url": "https://platform.openai.com/docs/pricing", "source_type": "official-pricing-docs", "title": "OpenAI API pricing", "accessed_at": "2026-08-14", "supports": ["pricing-model", "charge-metric", "plans"], "confidence": "verified"}],
+  "captured_at": "2026-08-14", "last_verified_at": "2026-08-14", "review_status": "verified"
+}

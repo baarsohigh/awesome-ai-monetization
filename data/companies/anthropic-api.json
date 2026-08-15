@@ -1,0 +1,8 @@
+{
+  "id": "anthropic-api", "company": "Anthropic", "product": "Claude API", "domain": "anthropic.com", "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+  "classification": {"product_models": ["foundation-model-api", "ai-infrastructure"], "pricing_components": ["usage-based", "model-specific", "batch-discount"], "charge_metrics": ["input-token", "output-token", "cache-read", "cache-write"], "customer_value_metrics": ["model-inference"]},
+  "observed": {"pricing_architecture": "Usage-priced model API with separate input, output, cache, and batch-processing rates where published.", "plans": [{"name": "API", "price_note": "Published per-million-token model rates", "billing_period": "usage", "public_price": true}], "free_access": {"available": false, "note": "No general free API tier recorded in this seed record."}, "enterprise": {"offered": true, "contact_sales": true}},
+  "analysis": {"monetization_archetypes": ["consumption-monetization", "capacity-monetization"], "expansion_vectors": [{"type": "api-volume", "description": "Token volume and model selection increase spend.", "confidence": "verified"}], "monetization_summary": "The public rate card preserves a close link between inference inputs and revenue, while cache and batch mechanisms price efficiency explicitly."},
+  "sources": [{"url": "https://docs.anthropic.com/en/docs/about-claude/pricing", "source_type": "official-pricing-docs", "title": "Anthropic API pricing", "accessed_at": "2026-08-14", "supports": ["pricing-model", "charge-metric", "plans"], "confidence": "verified"}],
+  "captured_at": "2026-08-14", "last_verified_at": "2026-08-14", "review_status": "verified"
+}

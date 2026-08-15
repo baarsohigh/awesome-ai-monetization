@@ -1,0 +1,663 @@
+{
+  "generated_at": "2026-08-15T02:40:02.883Z",
+  "records": [
+    {
+      "id": "anthropic-api",
+      "company": "Anthropic",
+      "product": "Claude API",
+      "domain": "anthropic.com",
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+      "classification": {
+        "product_models": [
+          "foundation-model-api",
+          "ai-infrastructure"
+        ],
+        "pricing_components": [
+          "usage-based",
+          "model-specific",
+          "batch-discount"
+        ],
+        "charge_metrics": [
+          "input-token",
+          "output-token",
+          "cache-read",
+          "cache-write"
+        ],
+        "customer_value_metrics": [
+          "model-inference"
+        ]
+      },
+      "observed": {
+        "pricing_architecture": "Usage-priced model API with separate input, output, cache, and batch-processing rates where published.",
+        "plans": [
+          {
+            "name": "API",
+            "price_note": "Published per-million-token model rates",
+            "billing_period": "usage",
+            "public_price": true
+          }
+        ],
+        "free_access": {
+          "available": false,
+          "note": "No general free API tier recorded in this seed record."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "consumption-monetization",
+          "capacity-monetization"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "api-volume",
+            "description": "Token volume and model selection increase spend.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "The public rate card preserves a close link between inference inputs and revenue, while cache and batch mechanisms price efficiency explicitly."
+      },
+      "sources": [
+        {
+          "url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+          "source_type": "official-pricing-docs",
+          "title": "Anthropic API pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "pricing-model",
+            "charge-metric",
+            "plans"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "cursor",
+      "company": "Anysphere",
+      "product": "Cursor",
+      "domain": "cursor.com",
+      "pricing_url": "https://cursor.com/pricing",
+      "classification": {
+        "product_models": [
+          "ai-copilot",
+          "developer-tool"
+        ],
+        "pricing_components": [
+          "subscription",
+          "seat-based",
+          "included-usage",
+          "usage-based",
+          "hybrid-seat-usage",
+          "freemium",
+          "enterprise-contract"
+        ],
+        "charge_metrics": [
+          "user-seat",
+          "model-usage"
+        ],
+        "customer_value_metrics": [
+          "developer-productivity",
+          "coding-workflow"
+        ]
+      },
+      "observed": {
+        "pricing_architecture": "Free entry tier; individual subscriptions include model usage; teams are priced per user with enterprise custom pricing. Additional model usage can be purchased after included usage is consumed.",
+        "plans": [
+          {
+            "name": "Hobby",
+            "price": 0,
+            "currency": "USD",
+            "billing_period": "month",
+            "public_price": true
+          },
+          {
+            "name": "Pro",
+            "price": 20,
+            "currency": "USD",
+            "billing_period": "month",
+            "public_price": true
+          },
+          {
+            "name": "Teams",
+            "price": 40,
+            "currency": "USD",
+            "billing_period": "month",
+            "per_unit": "user-seat",
+            "public_price": true
+          },
+          {
+            "name": "Enterprise",
+            "custom_pricing": true
+          }
+        ],
+        "free_access": {
+          "available": true,
+          "note": "Hobby tier has limited agent requests and tab completions."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "hybrid-monetization",
+          "credit-abstraction"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "more-seats",
+            "description": "Team plan is charged per user.",
+            "confidence": "verified"
+          },
+          {
+            "type": "increased-usage",
+            "description": "On-demand usage continues after the included amount is consumed.",
+            "confidence": "verified"
+          },
+          {
+            "type": "tier-upgrade",
+            "description": "Higher individual tiers include more usage.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "Cursor blends predictable seat revenue with model-usage expansion, keeping its customer-facing product subscription simple while preserving a metered backstop."
+      },
+      "sources": [
+        {
+          "url": "https://cursor.com/pricing",
+          "source_type": "official-pricing-page",
+          "title": "Cursor pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "plans",
+            "pricing-model",
+            "free-tier"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "url": "https://docs.cursor.com/account/pricing",
+          "source_type": "official-pricing-docs",
+          "title": "Cursor models and pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "included-usage",
+            "overage",
+            "charge-metric"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "elevenlabs",
+      "company": "ElevenLabs",
+      "product": "ElevenLabs",
+      "domain": "elevenlabs.io",
+      "pricing_url": "https://elevenlabs.io/pricing",
+      "classification": {
+        "product_models": [
+          "horizontal-ai-application",
+          "ai-infrastructure"
+        ],
+        "pricing_components": [
+          "subscription",
+          "included-credits",
+          "credit-based",
+          "usage-based",
+          "freemium",
+          "enterprise-contract"
+        ],
+        "charge_metrics": [
+          "credit",
+          "audio-minute",
+          "character"
+        ],
+        "customer_value_metrics": [
+          "generated-audio",
+          "voice-workflow"
+        ]
+      },
+      "observed": {
+        "pricing_architecture": "Creator and business plans use a recurring subscription with included credits, with products and limits varying by plan; enterprise is available separately.",
+        "plans": [
+          {
+            "name": "Free",
+            "price": 0,
+            "currency": "USD",
+            "billing_period": "month",
+            "public_price": true
+          },
+          {
+            "name": "Paid plans",
+            "price_note": "Published on official pricing page; pricing varies by plan and product.",
+            "billing_period": "month",
+            "public_price": true
+          },
+          {
+            "name": "Enterprise",
+            "custom_pricing": true
+          }
+        ],
+        "free_access": {
+          "available": true,
+          "note": "Official pricing page lists a free plan."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "credit-abstraction",
+          "hybrid-monetization"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "additional-credits",
+            "description": "Plan capacity is framed through credits.",
+            "confidence": "high"
+          },
+          {
+            "type": "tier-upgrade",
+            "description": "Higher plans package more capacity and business capabilities.",
+            "confidence": "high"
+          }
+        ],
+        "monetization_summary": "Credits translate heterogeneous voice-generation workloads into a familiar allowance and upgrade ladder."
+      },
+      "sources": [
+        {
+          "url": "https://elevenlabs.io/pricing",
+          "source_type": "official-pricing-page",
+          "title": "ElevenLabs pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "plans",
+            "credits",
+            "free-tier",
+            "enterprise"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "github-copilot",
+      "company": "GitHub",
+      "product": "GitHub Copilot",
+      "domain": "github.com",
+      "pricing_url": "https://github.com/features/copilot/plans",
+      "classification": {
+        "product_models": [
+          "ai-copilot",
+          "developer-tool"
+        ],
+        "pricing_components": [
+          "subscription",
+          "seat-based",
+          "included-credits",
+          "credit-based",
+          "usage-based",
+          "freemium"
+        ],
+        "charge_metrics": [
+          "user-seat",
+          "ai-credit"
+        ],
+        "customer_value_metrics": [
+          "developer-productivity",
+          "coding-workflow"
+        ]
+      },
+      "observed": {
+        "pricing_architecture": "Individual subscriptions bundle a monthly AI-credit allowance; additional paid AI-credit usage can be governed by budget. Code completions remain unlimited on paid plans.",
+        "plans": [
+          {
+            "name": "Free",
+            "price": 0,
+            "currency": "USD",
+            "billing_period": "month",
+            "public_price": true
+          },
+          {
+            "name": "Pro",
+            "price": 10,
+            "currency": "USD",
+            "billing_period": "month",
+            "per_unit": "user-seat",
+            "included_credits_usd": 15,
+            "public_price": true
+          },
+          {
+            "name": "Pro+",
+            "price": 39,
+            "currency": "USD",
+            "billing_period": "month",
+            "per_unit": "user-seat",
+            "included_credits_usd": 70,
+            "public_price": true
+          },
+          {
+            "name": "Max",
+            "price": 100,
+            "currency": "USD",
+            "billing_period": "month",
+            "per_unit": "user-seat",
+            "included_credits_usd": 200,
+            "public_price": true
+          }
+        ],
+        "free_access": {
+          "available": true,
+          "note": "Free plan has limited functionality."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "hybrid-monetization",
+          "credit-abstraction"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "more-seats",
+            "description": "Licenses are assigned per user.",
+            "confidence": "verified"
+          },
+          {
+            "type": "additional-credits",
+            "description": "Usage beyond an included allowance can draw on paid AI credits.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "A seat subscription is augmented with a money-denominated credit pool that makes variable model use controllable at the organization level."
+      },
+      "sources": [
+        {
+          "url": "https://github.com/features/copilot/plans",
+          "source_type": "official-pricing-page",
+          "title": "GitHub Copilot plans and pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "plans",
+            "credits",
+            "free-tier"
+          ],
+          "confidence": "verified"
+        },
+        {
+          "url": "https://docs.github.com/en/billing/concepts/product-billing/github-copilot-billing",
+          "source_type": "official-pricing-docs",
+          "title": "GitHub Copilot billing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "charge-metric",
+            "included-credits"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    },
+    {
+      "id": "openai-api",
+      "company": "OpenAI",
+      "product": "OpenAI API",
+      "domain": "openai.com",
+      "pricing_url": "https://platform.openai.com/docs/pricing",
+      "classification": {
+        "product_models": [
+          "foundation-model-api",
+          "ai-infrastructure"
+        ],
+        "pricing_components": [
+          "usage-based",
+          "model-specific",
+          "tiered"
+        ],
+        "charge_metrics": [
+          "input-token",
+          "output-token",
+          "cached-input-token"
+        ],
+        "customer_value_metrics": [
+          "model-inference"
+        ]
+      },
+      "observed": {
+        "pricing_architecture": "Model-specific pay-as-you-go rates expose distinct input, cached-input, and output token prices.",
+        "plans": [
+          {
+            "name": "API",
+            "price_note": "Published per-token model rates",
+            "billing_period": "usage",
+            "public_price": true
+          }
+        ],
+        "free_access": {
+          "available": false,
+          "note": "No general free API tier recorded in this seed record."
+        },
+        "enterprise": {
+          "offered": true,
+          "contact_sales": true
+        }
+      },
+      "analysis": {
+        "monetization_archetypes": [
+          "consumption-monetization"
+        ],
+        "expansion_vectors": [
+          {
+            "type": "api-volume",
+            "description": "Spend increases with token consumption.",
+            "confidence": "verified"
+          }
+        ],
+        "monetization_summary": "A direct infrastructure model: technical inference consumption is also the customer-facing billable unit."
+      },
+      "sources": [
+        {
+          "url": "https://platform.openai.com/docs/pricing",
+          "source_type": "official-pricing-docs",
+          "title": "OpenAI API pricing",
+          "accessed_at": "2026-08-14",
+          "supports": [
+            "pricing-model",
+            "charge-metric",
+            "plans"
+          ],
+          "confidence": "verified"
+        }
+      ],
+      "captured_at": "2026-08-14",
+      "last_verified_at": "2026-08-14",
+      "review_status": "verified"
+    }
+  ],
+  "summary": [
+    {
+      "id": "anthropic-api",
+      "company": "Anthropic",
+      "product": "Claude API",
+      "domain": "anthropic.com",
+      "pricing_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+      "product_models": [
+        "foundation-model-api",
+        "ai-infrastructure"
+      ],
+      "pricing_components": [
+        "usage-based",
+        "model-specific",
+        "batch-discount"
+      ],
+      "charge_metrics": [
+        "input-token",
+        "output-token",
+        "cache-read",
+        "cache-write"
+      ],
+      "customer_value_metrics": [
+        "model-inference"
+      ],
+      "free_access": false,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "The public rate card preserves a close link between inference inputs and revenue, while cache and batch mechanisms price efficiency explicitly."
+    },
+    {
+      "id": "cursor",
+      "company": "Anysphere",
+      "product": "Cursor",
+      "domain": "cursor.com",
+      "pricing_url": "https://cursor.com/pricing",
+      "product_models": [
+        "ai-copilot",
+        "developer-tool"
+      ],
+      "pricing_components": [
+        "subscription",
+        "seat-based",
+        "included-usage",
+        "usage-based",
+        "hybrid-seat-usage",
+        "freemium",
+        "enterprise-contract"
+      ],
+      "charge_metrics": [
+        "user-seat",
+        "model-usage"
+      ],
+      "customer_value_metrics": [
+        "developer-productivity",
+        "coding-workflow"
+      ],
+      "free_access": true,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "Cursor blends predictable seat revenue with model-usage expansion, keeping its customer-facing product subscription simple while preserving a metered backstop."
+    },
+    {
+      "id": "elevenlabs",
+      "company": "ElevenLabs",
+      "product": "ElevenLabs",
+      "domain": "elevenlabs.io",
+      "pricing_url": "https://elevenlabs.io/pricing",
+      "product_models": [
+        "horizontal-ai-application",
+        "ai-infrastructure"
+      ],
+      "pricing_components": [
+        "subscription",
+        "included-credits",
+        "credit-based",
+        "usage-based",
+        "freemium",
+        "enterprise-contract"
+      ],
+      "charge_metrics": [
+        "credit",
+        "audio-minute",
+        "character"
+      ],
+      "customer_value_metrics": [
+        "generated-audio",
+        "voice-workflow"
+      ],
+      "free_access": true,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "Credits translate heterogeneous voice-generation workloads into a familiar allowance and upgrade ladder."
+    },
+    {
+      "id": "github-copilot",
+      "company": "GitHub",
+      "product": "GitHub Copilot",
+      "domain": "github.com",
+      "pricing_url": "https://github.com/features/copilot/plans",
+      "product_models": [
+        "ai-copilot",
+        "developer-tool"
+      ],
+      "pricing_components": [
+        "subscription",
+        "seat-based",
+        "included-credits",
+        "credit-based",
+        "usage-based",
+        "freemium"
+      ],
+      "charge_metrics": [
+        "user-seat",
+        "ai-credit"
+      ],
+      "customer_value_metrics": [
+        "developer-productivity",
+        "coding-workflow"
+      ],
+      "free_access": true,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "A seat subscription is augmented with a money-denominated credit pool that makes variable model use controllable at the organization level."
+    },
+    {
+      "id": "openai-api",
+      "company": "OpenAI",
+      "product": "OpenAI API",
+      "domain": "openai.com",
+      "pricing_url": "https://platform.openai.com/docs/pricing",
+      "product_models": [
+        "foundation-model-api",
+        "ai-infrastructure"
+      ],
+      "pricing_components": [
+        "usage-based",
+        "model-specific",
+        "tiered"
+      ],
+      "charge_metrics": [
+        "input-token",
+        "output-token",
+        "cached-input-token"
+      ],
+      "customer_value_metrics": [
+        "model-inference"
+      ],
+      "free_access": false,
+      "enterprise": true,
+      "last_verified_at": "2026-08-14",
+      "freshness": "Fresh",
+      "review_status": "verified",
+      "summary": "A direct infrastructure model: technical inference consumption is also the customer-facing billable unit."
+    }
+  ]
+}
